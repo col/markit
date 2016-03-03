@@ -1,3 +1,3 @@
 defmodule Markit.Company do
-  defstruct [:Symbol, :Name, :Exchange]
+  defstruct [:symbol, :name, :exchange]
 end
