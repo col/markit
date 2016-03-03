@@ -8,4 +8,7 @@ defmodule Markit do
     Markit.Quote.get!(symbol).body
   end
 
+  def chart(symbol) do
+    Markit.Chart.get!(symbol).body
+  end
 end

@@ -1,0 +1,31 @@
+{
+  "Labels": null,
+  "Positions": [
+    0,
+    1
+  ],
+  "Dates": [
+    "2016-03-02T00:00:00",
+    "2016-03-03T00:00:00"
+  ],
+  "Elements": [
+    {
+      "Currency": "USD",
+      "TimeStamp": null,
+      "Symbol": "AAPL",
+      "Type": "price",
+      "DataSeries": {
+        "close": {
+          "min": 100.75,
+          "max": 101.48,
+          "maxDate": "2016-03-03T00:00:00",
+          "minDate": "2016-03-02T00:00:00",
+          "values": [
+            100.75,
+            101.48
+          ]
+        }
+      }
+    }
+  ]
+}
