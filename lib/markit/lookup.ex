@@ -2,7 +2,8 @@ defmodule Markit.Lookup do
   use HTTPoison.Base
 
   def process_url(keyword) do
-    "http://dev.markitondemand.com/MODApis/Api/v2/Lookup/json?input=#{keyword}"
+    query = URI.encode_query(%{ input: keyword })
+    "http://dev.markitondemand.com/MODApis/Api/v2/Lookup/json?#{query}"
   end
 
   def process_response_body(body) do

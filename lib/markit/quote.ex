@@ -6,7 +6,8 @@ defmodule Markit.Quote do
   :open]
 
   def process_url(symbol) do
-    "http://dev.markitondemand.com/MODApis/Api/v2/Quote/json?symbol=#{symbol}"
+    query = URI.encode_query(%{ symbol: symbol })
+    "http://dev.markitondemand.com/MODApis/Api/v2/Quote/json?#{query}"
   end
 
   def process_response_body(body) do
